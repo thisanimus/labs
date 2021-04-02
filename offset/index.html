@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Color Offset</title>
+	<meta content="Experiment with CSS mix-blend modes." name="description">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="https://labs.andrewhale.design/offset/assets/og.jpg" property="og:image">
+	<link href="../../assets/reset.css" rel="stylesheet">
+	<style>
+		body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+			background: #fff;
+		}
+
+		.c {
+			--accent-color: cyan;
+		}
+
+		.m {
+			--accent-color: magenta;
+		}
+
+		.y {
+			--accent-color: yellow;
+		}
+
+		.k {
+			--accent-color: black;
+		}
+
+		.hidden {
+			clip: rect(0 0 0 0);
+			-webkit-clip-path: inset(50%);
+			clip-path: inset(50%);
+			height: 1px;
+			overflow: hidden;
+			position: absolute;
+			white-space: nowrap;
+			width: 1px;
+		}
+
+		.separation-wrapper {
+			filter: contrast(1.2) brightness(1.2);
+			pointer-events: none;
+			position: relative;
+			height: 30em;
+			width: 30em;
+			perspective: 600px;
+			transform-style: preserve-3d;
+		}
+
+		.separation-wrapper img {
+			border: 1px solid var(--accent-color);
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			-o-object-fit: cover;
+			object-fit: cover;
+			mix-blend-mode: multiply;
+			transition: transform 50ms ease-in-out;
+		}
+
+		.separation-wrapper img.k {
+			border: none;
+		}
+
+		.frame {
+			border: 1px solid black;
+			mix-blend-mode: overlay;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: -2em;
+			left: -2em;
+		}
+
+		.colors {
+			pointer-events: none;
+			position: fixed;
+		}
+
+		.colors>* {
+			mix-blend-mode: overlay;
+			margin: 16px;
+			width: 12px;
+			height: 12px;
+			background: var(--accent-color);
+		}
+	</style>
+</head>
+<body>
+	<div class="separation-wrapper">
+		<img src="assets/k.jpg"> <img src="assets/c.jpg"> <img src="assets/m.jpg"> <img src="assets/y.jpg">
+		<div class="frame"></div>
+	</div>
+	<ul class="colors">
+		<li class="c"></li>
+		<li class="m"></li>
+		<li class="y"></li>
+		<li class="k"></li>
+	</ul>
+	<script>
+		const images = document.querySelectorAll(".separation-wrapper img");
+		const wrapper = document.querySelector("body");
+		wrapper.addEventListener("mousemove", (e) => {
+	 		let i = 1;
+	 		let centerX = window.innerWidth / 2;
+	 		let centerY = window.innerHeight / 2;
+			images.forEach((image) => {
+				let x = ((centerX + Math.trunc(-e.offsetX)) / 40) * i;
+				let y = ((centerY + Math.trunc(-e.offsetY)) / 40) * i;
+				let z = i * 10;
+				let position = `translate3d(${x}px, ${y}px, ${z}px)`;
+				console.log(position);
+				image.style.transform = position;
+				i++;
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+composer.phar
+composer.lock
+vendor
+tmp/*
+!tmp/index.html
+docs/*
+!docs/index.html
+cache/*
+!cache/index.html
+logs
+!logs/index.html
+.env
+.DS_Store
+**/.DS_Store
+**/error_log
+
+# Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
+# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
+# composer.lock
