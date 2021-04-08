@@ -51,7 +51,7 @@ $region = fetchRegionData($zip);
 				<label for="zip" class="hidden">Zip</label>
 			</div>
 			<div class="form-inline">
-				<input name="zip" type="text" value="<?= $zip ?>" /><button>Find</button>
+				<input name="zip" type="text" required minlength="5" maxlength="5" value="<?= $zip ?>" /><button>Find</button>
 			</div>
 		</form>
 
