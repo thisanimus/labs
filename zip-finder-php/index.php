@@ -45,13 +45,13 @@ $region = fetchRegionData($zip);
 				<h4><span class="label">lng:</span> <span id="lng"><?= $region->places[0]->longitude; ?></span></h4>
 			</div>
 		</div>
-		<form method="post" name="zipForm" action="<?= htmlspecialchars($_SERVER[" PHP_SELF "]);?>">
+		<form method="post" name="zipForm" action="">
 			<div class="form-context">
 				<p>Enter a zipcode to get details about its location.</p>
 				<label for="zip" class="hidden">Zip</label>
 			</div>
 			<div class="form-inline">
-				<input name="zip" type="text" value="90210" /><button>Find</button>
+				<input name="zip" type="text" value="<?= $zip ?>" /><button>Find</button>
 			</div>
 		</form>
 
