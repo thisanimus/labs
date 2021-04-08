@@ -30,7 +30,7 @@ $region = fetchRegionData($zip);
 		<div class="output">
 			<div class="state">
 				<div class="img-wrapper">
-				<img src="/states/<?= $region->places[0]->{'state abbreviation'}; ?>.svg"/>
+				<img src="states/<?= $region->places[0]->{'state abbreviation'}; ?>.svg"/>
 				</div>
 				<div class="label">state</div>
 				<h2 class="title"><?= $region->places[0]->state; ?></h2>
