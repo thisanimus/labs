@@ -12,8 +12,8 @@ window.addEventListener('mousemove', (e) => {
 	let centerX = window.innerWidth / 2;
 	let centerY = window.innerHeight / 2;
 	images.forEach((image) => {
-		let x = ((centerX + Math.trunc(-e.offsetX)) / 40) * i;
-		let y = ((centerY + Math.trunc(-e.offsetY)) / 40) * i;
+		let x = ((centerX + Math.trunc(-e.clientX)) / 40) * i;
+		let y = ((centerY + Math.trunc(-e.clientY)) / 40) * i;
 		let z = i * 10;
 		let position = `translate3d(${x}px, ${y}px, ${z}px)`;
 		console.log(position);
