@@ -31,6 +31,7 @@
 	  padding: .75em var(--spacing) .75em var(--spacing);
 	  display:flex;
 	  justify-content: space-between;
+	  	align-items:center;
   }
   .flight img{
 	  filter:grayscale(1) brightness(1000);
@@ -51,6 +52,7 @@
 	padding: var(--spacing);
 	display: flex;
 	justify-content: space-between;
+
   }
   .trip .label .icon{
 	  filter:invert(1);
