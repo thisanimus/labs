@@ -130,6 +130,7 @@ form[data-state="form"] {
 }
 form[data-state="form"] #message-button {
 	width: 4em;
+	right: -0.5px;
 	margin: calc(2 * var(--border-width));
 	height: calc(100% - (4 * var(--border-width)));
 }
