@@ -178,7 +178,7 @@ h2:after {
 		top: calc(50% - (50% - 5rem));
 		height: calc(100% - 10rem);
 		width: calc(40% + 5rem);
-		min-width: 28em;
+		min-width: 60ch;
 		right: 0;
 	}
 }

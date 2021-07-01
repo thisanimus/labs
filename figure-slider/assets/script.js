@@ -22,18 +22,21 @@ sliders.forEach((slider) => {
 		glider.refresh();
 	}, 0);
 });
-
-// Firefox garbage
 const isFirefox = /firefox/i.test(navigator.userAgent);
+const scrollbarHeight = 17;
+
 document.addEventListener('glider-loaded', hideFFScrollBars);
 document.addEventListener('glider-refresh', hideFFScrollBars);
-function hideFFScrollBars(e) {
-	var scrollbarHeight = 17; // Currently 17, may change with updates
+function hideFFScrollBars(e, height = null) {
+	// Currently 17, may change with updates
 	if (isFirefox) {
+		console.log('loaded');
 		// We only need to appy to desktop. Firefox for mobile uses
 		// a different rendering engine (WebKit)
 		if (window.innerWidth > 575) {
 			e.target.parentNode.style.height = e.target.offsetHeight - scrollbarHeight + 'px';
+		} else {
+			e.target.parentNode.removeAttribute('style');
 		}
 	}
 }
