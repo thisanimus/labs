@@ -1,3 +1,11 @@
+@-moz-document url-prefix() {
+	.glider-track {
+		margin-bottom: 17px;
+	}
+	.glider-wrap {
+		overflow: hidden;
+	}
+}
 :root {
 	--image-height-mobile: 18rem;
 	--image-height: 30rem;
@@ -100,7 +108,7 @@ h2:after {
 	background: currentColor;
 	opacity: 0.3;
 }
-.glider-wrapper {
+.slider {
 	position: relative;
 }
 
