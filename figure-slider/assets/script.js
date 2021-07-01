@@ -1,4 +1,5 @@
 const sliders = document.querySelectorAll('.slider');
+const gliders = [];
 sliders.forEach((slider) => {
 	let prev = slider.querySelector('.slider-prev');
 	let next = slider.querySelector('.slider-next');
@@ -16,17 +17,19 @@ sliders.forEach((slider) => {
 			next: next,
 		},
 	});
+	gliders.push(glider);
 	setTimeout(function () {
 		glider.refresh();
 	}, 0);
 });
 
+// Firefox garbage
+const isFirefox = /firefox/i.test(navigator.userAgent);
 document.addEventListener('glider-loaded', hideFFScrollBars);
 document.addEventListener('glider-refresh', hideFFScrollBars);
 function hideFFScrollBars(e) {
-	console.log('loaded');
 	var scrollbarHeight = 17; // Currently 17, may change with updates
-	if (/firefox/i.test(navigator.userAgent)) {
+	if (isFirefox) {
 		// We only need to appy to desktop. Firefox for mobile uses
 		// a different rendering engine (WebKit)
 		if (window.innerWidth > 575) {
