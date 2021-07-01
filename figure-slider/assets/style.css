@@ -62,8 +62,9 @@ body {
 	line-height: 1.5;
 	color: #333;
 	min-height: 100vh;
-	display: grid;
-	place-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .glider-wrapper {
