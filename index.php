@@ -90,12 +90,6 @@ foreach ($dir as $fileinfo) {
 					<li class="lab">
 						<a class="lab-link" href="<?= $lab['url'] ?>">
 							<div class="lab-image">
-								<div class="image-overlay magenta-overlay">
-									<img class="lab-image" src="<?= $lab['image'] ?>" alt="<?= $lab['title'] ?>"/> 
-								</div>
-								<div class="image-overlay cyan-overlay">
-									<img class="lab-image" src="<?= $lab['image'] ?>" alt="<?= $lab['title'] ?>"/> 
-								</div>
 								<img class="color-image" src="<?= $lab['image'] ?>" alt="<?= $lab['title'] ?>"/>
 							</div>
 							
