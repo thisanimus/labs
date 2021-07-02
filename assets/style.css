@@ -3,7 +3,7 @@
 	--color-light: #cfd8dc;
 
 	--color-link-default: #dce775;
-	--color-link-hover: #e6ee9c;
+	--color-link-hover: #fff9c4;
 	--color-link-visited: #b39ddb;
 
 	--crt-red: rgb(218, 49, 49);
@@ -102,6 +102,11 @@ a.lab-link {
 	padding: 1rem;
 	flex-grow: 1;
 	border: var(--border-width) solid currentColor;
+	transition: box-shadow 150ms ease-out;
+}
+a.lab-link:hover {
+	border-color: var(--color-link-hover);
+	box-shadow: 0 0 0.5em var(--color-link-default);
 }
 .lab-link > *:not(:last-child) {
 	margin-bottom: 1rem;
@@ -141,6 +146,7 @@ main {
 
 h1 {
 	font-size: 3em;
+	margin-bottom: 1rem;
 }
 
 .crt {
