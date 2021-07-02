@@ -103,6 +103,7 @@ a.lab-link {
 	flex-grow: 1;
 	border: var(--border-width) solid currentColor;
 	transition: box-shadow 150ms ease-out;
+	box-shadow: 0 0 0.2em currentColor, 1px 1px rgba(255, 0, 255, 0.5), -1px -1px rgba(0, 255, 255, 0.4);
 }
 a.lab-link:hover {
 	border-color: var(--color-link-hover);
@@ -161,7 +162,7 @@ h1 {
 	transform: translateZ(0);
 	pointer-events: none;
 	mix-blend-mode: overlay;
-	position: absolute;
+	position: fixed;
 	height: 100%;
 	width: 100%;
 	left: 0;
