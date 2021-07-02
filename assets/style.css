@@ -4,7 +4,7 @@
 
 	--color-link-default: #ffd54f;
 	--color-link-hover: #ffecb3;
-	--color-link-visited: #b39ddb;
+	--color-link-visited: #f0ccf7;
 
 	--crt-red: hsl(0, 70%, 55%);
 	--crt-green: hsl(124, 20%, 55%);
@@ -25,7 +25,7 @@ body {
 	line-height: 1.5;
 }
 h2 {
-	font-size: 2em;
+	font-size: 1.75em;
 	line-height: 1.2;
 }
 a {
