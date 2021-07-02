@@ -6,6 +6,9 @@ sliders.forEach((slider) => {
 	let dots = slider.querySelector('.slider-dots');
 	let slides = slider.querySelector('.slides');
 
+	// required for accessibility
+	slider.setAttribute('role', 'tablist');
+
 	let glider = new Glider(slides, {
 		slidesToShow: 1,
 		dots: dots,
@@ -27,7 +30,7 @@ const scrollbarHeight = 17;
 
 document.addEventListener('glider-loaded', hideFFScrollBars);
 document.addEventListener('glider-refresh', hideFFScrollBars);
-function hideFFScrollBars(e, height = null) {
+function hideFFScrollBars(e) {
 	// Currently 17, may change with updates
 	if (isFirefox) {
 		console.log('loaded');

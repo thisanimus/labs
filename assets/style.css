@@ -4,11 +4,11 @@
 
 	--color-link-default: #ffd54f;
 	--color-link-hover: #ffecb3;
-	--color-link-visited: #f0ccf7;
+	--color-link-visited: #f2d9f7;
 
-	--crt-red: hsl(0, 70%, 55%);
-	--crt-green: hsl(124, 20%, 55%);
-	--crt-blue: hsl(208, 67%, 55%);
+	--crt-red: hsl(0, 70%, 50%);
+	--crt-green: hsl(124, 20%, 50%);
+	--crt-blue: hsl(208, 67%, 50%);
 
 	--border-width: 2px;
 }
@@ -17,11 +17,14 @@
 	box-sizing: border-box;
 }
 html {
+	font-size: 1.125rem;
 }
+
 body {
 	background: var(--color-dark);
 	color: var(--color-light);
 	font-family: "Anonymous Pro", monospace;
+	letter-spacing: 0.05em;
 	line-height: 1.5;
 }
 h2 {
@@ -59,7 +62,7 @@ img {
 .labs-list {
 	grid-gap: 2rem;
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(16em, 1fr));
 }
 .labs-list > * {
 	min-width: 0;
@@ -124,7 +127,7 @@ h1 {
 
 .crt {
 	background-color: var(--color-dark);
-	text-shadow: 0 0 0.2em currentColor, 1px 1px rgba(255, 0, 255, 0.5), -1px -1px rgba(0, 255, 255, 0.4);
+	text-shadow: 0 0 3px currentColor, 1px 1px rgba(150, 0, 150, 0.3), -1px -1px rgba(0, 150, 150, 0.3);
 	position: relative;
 }
 .crt:before,

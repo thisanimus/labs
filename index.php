@@ -56,7 +56,7 @@ foreach ($dir as $fileinfo) {
 			$lab = animus_get_page_meta($file);
 			$labMeta = [
 				'size'=>animus_get_lab_size($fileinfo->getPathname()),
-				'modified'=>date('Y-m-d H:i:s', $fileinfo->getMTime()),
+				'modified'=>date('Y-m-d H:i', $fileinfo->getMTime()),
 				'filetype'=>'.'.pathinfo($file, PATHINFO_EXTENSION)
 			];
 			$lab['meta'] = $labMeta;
