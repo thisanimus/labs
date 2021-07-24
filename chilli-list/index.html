@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>Chili List</title>
+	<meta content="A live search/filter/sort UI for chillis" name="description">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="https://labs.thisanimus.com/chili-list/assets/og.jpg" property="og:image">	
+	<link href="assets/reset.css" rel="stylesheet">
+	<link href="assets/style.css" rel="stylesheet">
+</head>
+<body>
+	<main>
+		<section class="toolbar">
+			<label>
+				Search
+				<input type="search" placeholder="Find a Chili" />
+			</label>
+			<button data-sort="name" data-order="asc">
+				Sort by Name <span class="sort-arrow">▾</span>
+			</button>
+			<button data-sort="name" data-order="asc">
+				Sort by Heat <span class="sort-arrow">▾</span>
+			</button>
+		</section>
+		<section class="list">
+			<ul class="chili-list">
+			</ul>
+		</section>
+	</main>
+	<script async src="assets/script.js"></script>
+</body>
+</html>

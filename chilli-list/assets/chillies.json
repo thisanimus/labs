@@ -1,0 +1,122 @@
+[
+ {
+   "name": "Anaheim Pepper",
+   "description": "This long pepper is relatively mild and very versatile. When mature, the Anaheim turns deep red and are referred to a chile Colorado or California red chile. Anaheims are popular in salsas and dishes from the American Southwest.",
+   "heat": 1000,
+   "image": "anaheim.webp"
+ },
+ {
+   "name": "Banana Pepper",
+   "description": "This mild yet tangy pepper adds a kick to pizza or sandwiches. This pepper usually takes on a bright yellow hue as it ripens, but occasionally grows to be red, orange or green instead.",
+   "heat": 400,
+   "image": "banana.webp"
+ },
+ {
+   "name": "Basque Fryer",
+   "description": "Located on the border of France and Spain, the Basque region boasts six official types of peppers. The most popular type is the Basque Fryer pepper, also known as the doux de Landes, meaning \"sweet from Landes.\" (Landes is located in southwest France). As the name suggests, the pepper is sweet. The Basque fryer is can be eaten raw, roasted or sautéed.",
+   "heat": 0,
+   "image": "basque-fryer.webp"
+ },
+ {
+   "name": "Bell Pepper",
+   "description": "Relatively large in size, the bell-shaped pepper in its immature state is green with a slightly bitter flavor. As it matures, it turns bright red and becomes sweeter. You can also find yellow, orange, white, pink, and even purple varieties. With their high water content, bell peppers will add moisture to any dish. They're also great for adding color.",
+   "heat": 0,
+   "image": "bell.webp"
+ },
+ {
+   "name": "Cayenne Pepper",
+   "description": "Slender and tapered, this chile is probably most familiar in its dried, ground form—the powder known as cayenne pepper. Ground cayenne pepper is a main ingredient in the chili powder that flavors Tex-Mex dishes such as chili con carne. It's one of the spiciest types of peppers!",
+   "heat": 40000,
+   "image": "cayenne.webp"
+ },
+ {
+   "name": "Cherry Pepper",
+   "description": "This lovely pepper is sweet on the outside and the inside. Bright red and shaped like a heart, this large pepper barely registers on the Scoville scale, but makes up for its lack of spice with a sweet, succulent flavor. You'll commonly find cherry peppers chopped and stuffed into green olives, in pimento loaves and pimento cheese.\n",
+   "heat": 500,
+   "image": "cherry.webp"
+ },
+ {
+   "name": "Chilaca",
+   "description": "Black and wrinkly, chilacas boast a prune-like flavor with a hint a hint of licorice. \"Chilaca\" is an Aztec term meaning old or gray-haired, which is fitting given the pepper's wrinkly appearance. When dried, the chilaca is called a pasilla or chile negro, and is toasted or soaked and blended into sauces, often combined with fruit.",
+   "heat": 2000,
+   "image": "chilaca.webp"
+ },
+ {
+   "name": "Ghost Pepper",
+   "description": "Sometimes called Bhut Naga Jolokia (bhut means ghost, naga means snake, and jolokia is chile), the name alone sounds daunting. This chile has a venomous bite! The ghost pepper hails from Northeastern India and is also cultivated in Sri Lanka and Bangladesh. So how hot is this hair raiser? With more than 1 million Scoville units, it's approximately half as hot as the pepper spray used by law enforcement but 100 times hotter than a jalapeño. One of the hottest (edible) peppers in the world, ghost peppers are used — sparingly — in chutney and curry.",
+   "heat": 1000000,
+   "image": "ghost.webp"
+ },
+ {
+   "name": "Habañero Pepper",
+   "description": "Small and bulbous, this chile, in the same family as the Scotch bonnet, is one of the hottest on the Scoville scale. If you can get past the heat, habañeros also have a fruity flavor. They're popular on Mexico's Yucatan Peninsula and in the Caribbean, where they're used to make hot sauces.",
+   "heat": 200000,
+   "image": "habanero.webp"
+ },
+ {
+   "name": "Jalapeño Pepper",
+   "description": "This Mexican pepper is typically plucked from the vine while still green. If allowed to ripen more, they will turn red and take on a slightly fruity flavored. Jalapeños are a tasty ingredient commonly used to in salsa and sauces. When dried, a jalapeño is called a chipotle. Smoke-dried chipotles come in two varieties: meco (mellow) and moritas (spicier). Smoky, woodsy, and spicy, chipotles are the perfect ingredient for salsas, sauces, escabeche, and adobo.",
+   "heat": 5000,
+   "image": "jalapeno.webp"
+ },
+ {
+   "name": "Mirasol Chili",
+   "description": "Bright red and pointed upward, these peppers grow toward the sun, which is why they were given the name mirasol (which means \"looking at the sun\" in Spanish). In their dried form, they are called guajillo. Guajillo are fruity, tangy, and mildly acidic, and are a common ingredient in traditional al pastor. They are also one of the main chilis used in mole sauce.",
+   "heat": 3500,
+   "image": "mirasol.webp"
+ },
+ {
+   "name": "Padrón Peppers",
+   "description": "Padrón peppers are typically sweet and mild, but occasionally, a this pepper packs quite a bit of spice. The eponymous pepper grows in Padrón in northwestern Spain, and is often served, fried, as a tapa. They can also be served grilled.",
+   "heat": 0,
+   "image": "padron.webp"
+ },
+ {
+   "name": "Piquillo",
+   "description": "This mild, sweet pepper hails from northern Spain and features a smokey, tart flavor that's ideal for sandwiches and sauces, and also thrives as a compliment to meat and cheese. You'll often find them jarred in your grocer's gourmet section. As they mature, they grow from green to red. They measure three to four inches long and are slightly curved at the end, resembling a little beak.",
+   "heat": 750,
+   "image": "piquillo.webp"
+ },
+ {
+   "name": "Piri Piri",
+   "description": "When Portuguese sailors made port of call in what's now South Africa and Mozambique, they brought ashore little chile peppers called bird's eyes, or peri-peri in Swahili. The name also came to refer to the piquant sauce made from these chiles, as well as to the Portuguese-African method of cooking prawns, chicken, or anything else in this sauce. Nando's bottled version is a mainstay for those who don't want to make it from scratch. Though it's a relatively small pepper, growing only one to two inches, it packs quite a punch.",
+   "heat": 100000,
+   "image": "pirri-pirri.webp"
+ },
+ {
+   "name": "Poblano Pepper",
+   "description": "Somewhat large and heart-shaped, the poblano is common in Mexican dishes such as chiles rellenos. Are poblano peppers spicy? Yes, but only mildly spicy. At maturity, the poblano turns dark red-brown and can be dried, at which point it's referred to as an ancho or mulato. Anchos have a rich, raisin-like sweetness. The high yield of flesh to skin makes anchos great for sauces.",
+   "heat": 1000,
+   "image": "poblano.webp"
+ },
+ {
+   "name": "Rocoto Pepper",
+   "description": "This South American pepper looks like a miniature bell pepper, and, like a bell pepper, can come in shades of orange, yelllow and red. The hottest rocotos are typically yellow, but red rocotos are the most common. Inside, the pepper has unique black seeds. It's sometimes referred to as the hairy pepper thanks to its furry leaves. Rocoto have a crisp and fruity flavor, and are commonly used in salsa.",
+   "heat": 100000,
+   "image": "rocoto.webp"
+ },
+ {
+   "name": "Scotch Bonnet",
+   "description": "This spicy pepper is called a scotch bonnet thanks to its resemblance to the caps men wear in Scotland (tam o' shanter hats, to be precise). It's the hottest pepper in the Caribbean and used to flavor all sorts of island dishes, including jerk chicken. Though the pepper is most often spicy, you will occasionally find a sweet variety, called cachucha.",
+   "heat": 250000,
+   "image": "scotch-bonnet.webp"
+ },
+ {
+   "name": "Serrano Pepper",
+   "description": "Just a couple of inches long, with a tapered end, this small pepper packs quite a bit of heat. Beware: The smaller the pepper, the hotter it is. When ripe, serranos are red or yellowish orange—they can be cooked in both their ripe and unripe states. Serranos are common in Mexican and Thai cooking.",
+   "heat": 12000,
+   "image": "serrano.webp"
+ },
+ {
+   "name": "Shishito",
+   "description": "Harvested while still green, these thin-walled peppers can be pan-seared and eaten on their own. They can also be added to pizza or to flavor dishes. The riper the shishito, the spicier the pepper.",
+   "heat": 175,
+   "image": "shishito.webp"
+ },
+ {
+   "name": "Tabasco Pepper",
+   "description": "Best known for the sauce that bares its name, this pepper grows throughout the world. At maturity, the pepper measures one to two inches and is bright red. To create the famous tabasco sauce, the pepper is smashed and combined with salt and vinegar, which tempers the pepper's heat (the Scoville rating of tabasco sauce is 2,500 to 5,000 — a mere fraction of its rating as a pepper).",
+   "heat": 30000,
+   "image": "tabasco.webp"
+ }
+]
