@@ -3,26 +3,59 @@
 <head>
 	<meta charset="utf-8">
 	<title>Chili List</title>
-	<meta content="A live search/filter/sort UI for chillis" name="description">
+	<meta content="A vanilla js live search/filter/sort UI." name="description">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<meta content="https://labs.thisanimus.com/chili-list/assets/og.jpg" property="og:image">	
+	<meta content="https://labs.thisanimus.com/chili-list/assets/og.png" property="og:image">	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
 	<link href="assets/reset.css" rel="stylesheet">
 	<link href="assets/style.css" rel="stylesheet">
 </head>
 <body>
-	<main>
-		<section class="toolbar">
-			<label>
-				Search
-				<input type="search" placeholder="Find a Chili" />
-			</label>
-			<button data-sort="name" data-order="asc">
-				Sort by Name <span class="sort-arrow">▾</span>
-			</button>
-			<button data-sort="name" data-order="asc">
-				Sort by Heat <span class="sort-arrow">▾</span>
-			</button>
-		</section>
+	<main id="chili-list">
+		<hr>
+		<header class="page-header">
+			<h1>Chili Finder</h1>
+			<form class="list-controls">
+				<fieldset class="list-search">
+					<legend>Search for a Chili</legend>
+					<label>
+						<span class="hidden">Search</span>
+						<input class="list-search" type="search" placeholder="Search" />
+					</label>
+				</fieldset>
+				<fieldset class="list-sort">
+					<legend>Sort</legend>
+					<div class="sorts">
+						<button type="button" data-sort="name" data-order="asc">
+							Sort by Name <span class="sort-arrow">▾</span>
+						</button>
+						<button type="button" data-sort="scoville" data-order="asc">
+							Sort by Heat <span class="sort-arrow">▾</span>
+						</button>
+					</div>
+				</fieldset>
+				<fieldset class="list-filter">
+					<legend>Filter</legend>
+					<div class="heat-filters">
+						<label class="heat-filter mild">
+							<input data-filter="heat" value="mild" type="checkbox">
+							Mild
+						</label>
+						<label class="heat-filter medium">
+							<input data-filter="heat" value="medium" type="checkbox">
+							Medium
+						</label>
+						<label class="heat-filter hot">
+							<input data-filter="heat" value="hot" type="checkbox">
+							Hot
+						</label>
+					</div>
+				</fieldset>
+			</form>
+		</header>
+		<hr>
 		<section class="list">
 			<ul class="chili-list">
 			</ul>
