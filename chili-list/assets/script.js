@@ -11,14 +11,25 @@ class List {
 		this.init();
 	}
 	init() {
+		// create the proxies
 		this.filteredList = this.list;
 		this.orderedList = this.list;
-		this.renderList();
-		let search = this.listWrapper.querySelector('input[type="search"]');
 
+		// populate the filters
+		this.params.forEach((param) => {
+			this.filterParams[param] = [];
+		});
+
+		// create the html elements
+		this.renderList();
+
+		// listen for keystrokes in the search input
+		let search = this.listWrapper.querySelector('input[type="search"]');
 		search.addEventListener('keyup', (e) => {
 			this.search(search.value);
 		});
+
+		// listen for clicks on the sort buttons
 		let sorts = this.listWrapper.querySelectorAll('[data-sort]');
 		sorts.forEach((sort) => {
 			sort.addEventListener('click', (e) => {
@@ -28,13 +39,9 @@ class List {
 			});
 		});
 
-		this.params.forEach((param) => {
-			this.filterParams[param] = [];
-		});
-
+		// listen for changes on the filter inputs
 		let filters = this.listWrapper.querySelectorAll('[data-filter]');
 		filters.forEach((filter) => {
-			console.log(this.filterParams);
 			let param = filter.dataset.filter;
 			let filterParams = this.filterParams[param];
 			filter.addEventListener('change', (e) => {
@@ -143,7 +150,8 @@ getChilies().then((chilies) => {
 		params: ['name', 'heat', 'description'],
 		template: (item) => {
 			return `
-			<li class="chili ${item.heat}">	
+			<li class="chili ${item.heat}">
+				<div class="grit"></div>
 				<header class="chili-header"> 
 					<div class="chili-details">
 						<h2 class="name">${item.name}</h2>

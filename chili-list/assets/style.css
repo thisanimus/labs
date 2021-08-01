@@ -7,7 +7,7 @@
 	--color-red:#e53935;
 	--color-red-dark:#b71c1c;
 	--color-amber:#ffa000;
-	--color-amber-dark:#bc5100;
+	--color-amber-dark:#945401;
 	--color-green:#689f38;
 	--color-green-dark:#33691e;
 
@@ -24,12 +24,25 @@ main{
 	max-width:1200px;
 	margin:0 auto;
 	padding:1rem;
+	background:var(--color-background);
 }
 body{
+	position:relative;
 	line-height:1.4;
 	color:var(--color-dark);
 	background:var(--color-background);
 	font-family: var(--font);
+}
+.grit{
+	position:absolute;
+	z-index:1;
+	height:100%;
+	width:100%;
+	background-image: url(img/_texture_light.png);
+  	background-repeat: repeat;
+	background-size: 256px;
+	opacity:.3;
+	pointer-events:none;
 }
 h1, h2, h3, h4, h5, h6{
 	line-height:1;
@@ -62,12 +75,12 @@ legend{
 input:not([type="checkbox"]){
 	font-family:var(--font);
 	font-size:1rem;
-	padding:.5em;
+	padding:.7rem;
 	width:100%;
 	background:var(--color-light);
 	border-radius: var(--border-radius);
 	color:var(--color-dark);
-	border: var(--border-width) solid var(--color-dark);
+	border: var(--border-width) solid var(--color-med);
 }
 input:not([type="checkbox"]):focus{
 	outline:none;
@@ -87,7 +100,7 @@ img{
 }
 .heat-filter{
 	text-align: center;
-	padding:.5em;
+	padding:.7rem;
 	flex-grow:1;
 	border-radius: var(--border-radius);
 	color:var(--color-dark);
