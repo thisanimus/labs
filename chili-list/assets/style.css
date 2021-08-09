@@ -320,7 +320,7 @@ hr:before {
 
 @media only screen and (min-width: 1024px) {
 	.list-controls{
-		grid-template-columns: 1fr 340px 340px;
+		grid-template-columns: 1fr 340px 380px;
 		grid-template-areas: 
 		"search filter sort";
 	}
