@@ -1,0 +1,68 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>2-level Nav</title>
+	<meta content="An straightforward way to make an accessible, semantic 2-level nav." name="description">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="https://labs.thisanimus.com/2-level-nav/assets/og.png" property="og:image">
+  <link rel="stylesheet" href="assets/reset.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<nav class="menu">
+  <div class="menu-site-link">
+    <a class="site-link" href="#">
+      <span class="site-logo">⚒</span>
+      <span class="site-title">Web Foundery</span>
+    </a>
+  </div>
+  <button class="menu-toggle">
+    <div class="icon">☰</div>
+    <div class="text hidden">Open the Menu</div>
+  </button>
+  <div class="menu-wrapper">
+    <ul class="menu-list" data-level="1">
+      <li class="menu-item">
+        <a class="menu-link" href="#">■ Home</a>
+      </li>
+      <li class="menu-item">
+        <button class="menu-link">
+          <div class="text">▲ About</div>
+          <div class="direction-indicator">▲</div>
+        </button>
+        <ul class="menu-list" data-level="2">
+          <li class="menu-item">
+            <a class="menu-link" href="#">⧋ The Foundery</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">⧊ The Metalworkers</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <button class="menu-link">
+          <div class="text">● Services</div>
+          <div class="direction-indicator">▲</div>
+        </button>
+        <ul class="menu-list" data-level="2">
+          <li class="menu-item">
+            <a class="menu-link" href="#">⨀ Content Furnace</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">⨁ Molten Design</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">⨂ Development Forge</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a class="menu-link" href="#">◆ Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<script async defer src="assets/script.js"></script>
+</body>
+</html>
+
