@@ -12,7 +12,6 @@ const cheatLetters = ['c', 'h', 'e', 'a', 't'];
 
 for (let i = 0; i < 5; i++) {
   const el = document.getElementById(cheatLetters[i]);
-  console.log(wordLetters);
   if (cheatLetters[i] == wordLetters[i]) {
     el.dataset.state = 'correct';
   } else if (wordLetters.includes(cheatLetters[i])) {
