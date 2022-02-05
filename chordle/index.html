@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Chordle</title>
+	<meta content="Tired of actually playing wordle and wish you could just get the answer? I got you fam." name="description">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="https://labs.thisanimus.com/chordle/assets/og.jpg" property="og:image">
+	<link href="assets/reset.css" rel="stylesheet">
+	<link href="assets/style.css" rel="stylesheet">
+</head>
+<body>
+	<div id="game">
+      <header>
+        <div class="title">
+         CHORDLE
+        </div>
+      </header>
+        <div id="board-container">
+          <div id="board">
+		  	<div id="c" data-state="absent">C</div>
+			<div id="h" data-state="absent">H</div>
+			<div id="e" data-state="absent">E</div>
+			<div id="a" data-state="absent">A</div>
+			<div id="t" data-state="absent">T</div>
+			<div class="answer"></div>
+			<div class="answer"></div>
+			<div class="answer"></div>
+			<div class="answer"></div>
+			<div class="answer"></div>
+		  </div>
+		  <p class="message">Yes, I'm a dirty rotten cheater. <br>Just give me the answer already.</p>
+		  <button onclick="getAnswer()">Cheat</button>
+		</div>
+    </div>
+	<script async defer src="assets/script.js"></script>
+</body>
+</html>
