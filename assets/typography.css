@@ -64,7 +64,3 @@ ol:not([class]) li {
 	padding-left: 0em;
 	margin-bottom: 0.5em;
 }
-.text-wrapper {
-	max-width: 60ch;
-	margin: 4rem auto;
-}
