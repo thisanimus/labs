@@ -90,7 +90,8 @@ class AudioPlayer {
 	}
 
 	playPause() {
-		if (this.playing) {
+		if (this.playing == true) {
+
 			this.audio.pause();
 			this.playing = false;
 		} else {
