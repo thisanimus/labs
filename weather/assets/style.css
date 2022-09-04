@@ -1,5 +1,6 @@
 :root {
 	--border-radius: 2px;
+	--border-width: 1px;
 	--color-hot: #fed9ad;
 	--color-cold: #91c8ff;
 	--metadata-size: 2.5rem;
