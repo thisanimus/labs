@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Weather</title>
+	<meta content="Hit an API to get the current temperature and upcoming forecast." name="description" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta content="https://labs.thisanimus.com/weather/og.png" property="og:image" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baselayer.css@latest/dist/baselayer.css">
+	<link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+	<main>
+		<div class="weather">
+			<form data-show="false">
+
+				<label for="zip">Zip Code*</label>
+				<div class="input-row">
+					<input type="search" id="zip" name="zip" placeholder="90210" value="90210" inputmode="numeric"
+						pattern="(\d{5}([\-]\d{4})?)" required />
+					<button title="search"><img src="assets/icons/search.svg" alt="" /></button>
+				</div>
+
+
+			</form>
+
+			<time id="today" class="today" data-hydrated="false">
+
+				<div class="text">
+					<div class="location">
+						<button title="edit" onclick="showForm()">
+							<img src="assets/icons/edit-2.svg" alt="" />
+						</button>
+					</div>
+					<div class="big-temp">
+
+					</div>
+					<div class="degree">°</div>
+					<div class="hi-lo">
+						<div class="temp hi"></div>
+						<div class="seperator"></div>
+						<div class="temp lo"></div>
+					</div>
+				</div>
+				<div class="icon">
+
+				</div>
+
+			</time>
+
+			<div id="next-week" class="next-week">
+				<time data-hydrated="false">
+					<div class="icon"></div>
+					<div class="dayname"></div>
+					<div class="hi-lo">
+						<div class="temp hi"></div>
+						<div class="seperator"></div>
+						<div class="temp lo"></div>
+					</div>
+				</time>
+				<time data-hydrated="false">
+					<div class="icon"></div>
+					<div class="dayname"></div>
+					<div class="hi-lo">
+						<div class="temp hi"></div>
+						<div class="seperator"></div>
+						<div class="temp lo"></div>
+					</div>
+				</time>
+				<time data-hydrated="false">
+					<div class="icon"></div>
+					<div class="dayname"></div>
+					<div class="hi-lo">
+						<div class="temp hi"></div>
+						<div class="seperator"></div>
+						<div class="temp lo"></div>
+					</div>
+				</time>
+				<time data-hydrated="false">
+					<div class="icon"></div>
+					<div class="dayname"></div>
+					<div class="hi-lo">
+						<div class="temp hi"></div>
+						<div class="seperator"></div>
+						<div class="temp lo"></div>
+					</div>
+				</time>
+			</div>
+		</div>
+	</main>
+	<script src="assets/script.js"></script>
+</body>
+
+</html>
