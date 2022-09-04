@@ -53,7 +53,7 @@ const setToday = (data) => {
 			</button>
 		</div>
 		<div class="big-temp">
-			1${parseInt(data.main.temp)}
+			${parseInt(data.main.temp)}
 		</div>
 		<div class="degree">°</div>
 		<div class="hi-lo">
