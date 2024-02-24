@@ -1,17 +1,33 @@
-name: SFTP Deploy
+name: Deploy Files
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+  # Enables manually triggering of Workflow with file synchronization option
+  workflow_dispatch:
+    inputs:
+      sync:
+        description: 'File synchronization'
+        required: true
+        default: 'delta'
 
 jobs:
-  build-and-deploy:
-    uses: actions/checkout@v3
-    uses: Dylan700/sftp-upload-action@latest
-    with:
-      server: 164.92.81.73
-      username: thisanimus
-      key: ${{secrets.PRIVATE_KEY}}
-      port: 22
-      uploads: |
-        ./ => /var/www/labs.thisanimus.com/
+  deploy-master:
+    name: 'master branch'
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: 'Deploy'
+        uses: milanmk/actions-file-deployer@master
+        with:
+          remote-protocol: 'sftp'
+          remote-host: 164.92.81.73
+          remote-user: 'thisanimus'
+          ssh-private-key: ${{ secrets.PRIVATE_KEY }}
+          remote-path: '/var/www/labs.thisanimus.com'
